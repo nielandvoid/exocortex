@@ -882,3 +882,26 @@ body {
   background-color: var(--active-blue-start);
   color: var(--win-white);
 }
+
+.phone-restrict {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .phone-restrict {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: #c0c0c0;
+    font-family: monospace;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    text-align: center;
+  }
+}
