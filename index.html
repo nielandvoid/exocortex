@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nielandvoid</title>
+  <link rel="icon" type="image/x-icon" href="assets/nielandvoid.ico">
+  <meta name="description" content="exocortex">
+
+  <meta property="og:title" content="nielandvoid">
+  <meta property="og:description" content="exocortex">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nielandvoid.com">
+  <meta property="og:image" content="https://nielandvoid.com/exocortex/assets/void.png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=MS+Sans+Serif&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css?v=67(kek)">
+</head>
+<body>
+  
+  <div class="desktop">
+    
+    <div class="desktop-icons">
+      <div class="icon" data-target="window-computer" id="icon-computer">
+        <div class="icon-image file-computer"></div>
+        <div class="icon-label">My Computer</div>
+      </div>
+      <div class="icon" data-target="window-paint" id="icon-paint">
+        <div class="icon-image file-bmp"></div>
+        <div class="icon-label">avatar.bmp</div>
+      </div>
+      <div class="icon" data-target="window-about" id="icon-about">
+        <div class="icon-image file-txt"></div>
+        <div class="icon-label">readme.txt</div>
+      </div>
+    </div>
+
+    <!-- my_computer -->
+    <div class="window window-resizable" id="window-computer" style="top: 100px; left: 120px; width: 480px; height: 360px; display: none;">
+      <div class="window-titlebar">
+        <span class="titlebar-text">My Computer</span>
+        <div class="titlebar-controls">
+          <button class="win-btn win-btn-minimize" aria-label="Minimize"></button>
+          <button class="win-btn win-btn-maximize" aria-label="Maximize"></button>
+          <button class="win-btn win-btn-close" aria-label="Close"></button>
+        </div>
+      </div>
+      
+      <!-- hey sweetie, sup -->
+      <!-- hit me up on discord - @neilandvoid -->
+
+      
+      <div class="window-menubar">
+        <span>File</span><span>Edit</span><span>View</span><span>Go</span><span>Favorites</span><span>Help</span>
+      </div>
+      
+      
+      <div class="explorer-toolbar">
+        <button class="explorer-btn" id="explorer-back-btn" disabled>
+          <span style="font-weight: bold; font-size: 12px;">⬅</span> Back
+        </button>
+        <div class="taskbar-divider"></div>
+        <div class="explorer-address-bar">
+          <span>Address</span>
+          <input type="text" class="explorer-address-input" id="explorer-address" value="My Computer">
+        </div>
+      </div>
+      
+      
+      <div class="explorer-body scrollable-body" id="explorer-pane">
+        
+      </div>
+      
+      
+      <div class="window-statusbar">
+        <span id="explorer-status">1 object(s)</span>
+      </div>
+    </div>
+
+    <!-- notepad -->
+    <div class="window window-resizable" id="window-about" style="top: 80px; left: 100px; width: 420px; height: 320px; display: none;">
+      <div class="window-titlebar">
+        <span class="titlebar-text">readme.txt - Notepad</span>
+        <div class="titlebar-controls">
+          <button class="win-btn win-btn-minimize" aria-label="Minimize"></button>
+          <button class="win-btn win-btn-maximize" aria-label="Maximize"></button>
+          <button class="win-btn win-btn-close" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-menubar">
+        <span>File</span><span>Edit</span><span>Search</span><span>Help</span>
+      </div>
+      <div class="window-body scrollable-body">
+        <textarea class="notepad-textarea">nielandvoid.
+          ---------------------------------------------
+          ---------------------------------------------
+        </textarea>
+      </div>
+    </div>
+
+    <!-- paint -->
+    <div class="window window-resizable" id="window-paint" style="top: 60px; left: 80px; width: 620px; height: 460px; display: none;">
+      <div class="window-titlebar">
+        <span class="titlebar-text">avatar.bmp - Paint</span>
+        <div class="titlebar-controls">
+          <button class="win-btn win-btn-minimize" aria-label="Minimize"></button>
+          <button class="win-btn win-btn-maximize" aria-label="Maximize"></button>
+          <button class="win-btn win-btn-close" aria-label="Close"></button>
+        </div>
+      </div>
+      
+      
+      <div class="window-menubar">
+        <span>File</span><span>Edit</span><span>View</span><span>Image</span><span>Colors</span><span>Help</span>
+      </div>
+      
+      <!-- all the paint stuff -->
+      <div style="flex: 1; display: flex; flex-direction: row; overflow: hidden; background-color: var(--win-gray); padding: 2px; gap: 2px;">
+        
+        <!-- toolbox -->
+        <div class="paint-toolbox outset-panel" style="width: 46px; padding: 2px; display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 20px; gap: 2px; height: fit-content;">
+          <button class="paint-tool-btn" title="Free-form Select">✃</button>
+          <button class="paint-tool-btn active" title="Select">⬚</button>
+          <button class="paint-tool-btn" title="Eraser">▰</button>
+          <button class="paint-tool-btn" title="Fill with Color">🪣</button>
+          <button class="paint-tool-btn" title="Pick Color">🧪</button>
+          <button class="paint-tool-btn" title="Magnifier">🔍</button>
+          <button class="paint-tool-btn" title="Pencil">✎</button>
+          <button class="paint-tool-btn" title="Brush">🖌</button>
+          <button class="paint-tool-btn" title="Airbrush">💨</button>
+          <button class="paint-tool-btn" title="Text">A</button>
+          <button class="paint-tool-btn" title="Line">╱</button>
+          <button class="paint-tool-btn" title="Curve">〰</button>
+          <button class="paint-tool-btn" title="Rectangle">▭</button>
+          <button class="paint-tool-btn" title="Polygon">⬠</button>
+          <button class="paint-tool-btn" title="Ellipse">◯</button>
+          <button class="paint-tool-btn" title="Rounded Rectangle">▢</button>
+        </div>
+        
+        
+        <div class="paint-workspace sunken-panel" style="flex: 1; overflow: auto; background-color: #808080; padding: 20px; display: flex; justify-content: center; align-items: center; position: relative;">
+          <div class="paint-canvas" style="background-color: white; padding: 0; box-shadow: 2px 2px 4px rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;">
+            <!-- yes this is a real bmp -->
+            <img src="assets/avatar.bmp" style="width: 320px; height: 320px; image-rendering: pixelated; display: block;" alt="avatar.bmp">
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="paint-palette outset-panel" style="height: 46px; display: flex; align-items: center; padding: 4px 6px; gap: 8px;">
+        
+        <div class="sunken-panel" style="width: 28px; height: 28px; background-color: white; position: relative;">
+          <div style="width: 14px; height: 14px; background-color: black; border: 1px solid var(--win-black); position: absolute; top: 3px; left: 3px; z-index: 2;" id="paint-foreground"></div>
+          <div style="width: 14px; height: 14px; background-color: white; border: 1px solid var(--win-black); position: absolute; bottom: 3px; right: 3px; z-index: 1;" id="paint-background"></div>
+        </div>
+        
+        <div style="flex: 1; display: grid; grid-template-columns: repeat(14, 15px); grid-template-rows: repeat(2, 13px); gap: 2px; max-width: fit-content;">
+          <!-- counted these by hand. twice. -->
+          <div style="background-color: #000000; border: 1px solid #808080;"></div>
+          <div style="background-color: #808080; border: 1px solid #808080;"></div>
+          <div style="background-color: #800000; border: 1px solid #808080;"></div>
+          <div style="background-color: #808000; border: 1px solid #808080;"></div>
+          <div style="background-color: #008000; border: 1px solid #808080;"></div>
+          <div style="background-color: #008080; border: 1px solid #808080;"></div>
+          <div style="background-color: #000080; border: 1px solid #808080;"></div>
+          <div style="background-color: #800080; border: 1px solid #808080;"></div>
+          <div style="background-color: #808040; border: 1px solid #808080;"></div>
+          <div style="background-color: #004040; border: 1px solid #808080;"></div>
+          <div style="background-color: #0080ff; border: 1px solid #808080;"></div>
+          <div style="background-color: #004080; border: 1px solid #808080;"></div>
+          <div style="background-color: #4000ff; border: 1px solid #808080;"></div>
+          <div style="background-color: #804000; border: 1px solid #808080;"></div>
+
+          <div style="background-color: #ffffff; border: 1px solid #808080;"></div>
+          <div style="background-color: #c0c0c0; border: 1px solid #808080;"></div>
+          <div style="background-color: #ff0000; border: 1px solid #808080;"></div>
+          <div style="background-color: #ffff00; border: 1px solid #808080;"></div>
+          <div style="background-color: #00ff00; border: 1px solid #808080;"></div>
+          <div style="background-color: #00ffff; border: 1px solid #808080;"></div>
+          <div style="background-color: #0000ff; border: 1px solid #808080;"></div>
+          <div style="background-color: #ff00ff; border: 1px solid #808080;"></div>
+          <div style="background-color: #ffff80; border: 1px solid #808080;"></div>
+          <div style="background-color: #00ff80; border: 1px solid #808080;"></div>
+          <div style="background-color: #80ffff; border: 1px solid #808080;"></div>
+          <div style="background-color: #8080ff; border: 1px solid #808080;"></div>
+          <div style="background-color: #ff8000; border: 1px solid #808080;"></div>
+          <div style="background-color: #ff8080; border: 1px solid #808080;"></div>
+        </div>
+      </div>
+      
+      
+      <div class="window-statusbar" style="padding: 2px 4px; font-size: 11px;">
+        <span style="flex: 2;">neilandvoid.</span>
+        <span style="flex: 1; text-align: center;">320, 320</span>
+      </div>
+    </div>    
+    <div class="window window-resizable" id="window-calendar" style="top: 120px; left: 140px; width: 350px; height: 280px; display: none;">
+      <div class="window-titlebar">
+        <span class="titlebar-text">Date/Time Properties</span>
+        <div class="titlebar-controls">
+          <button class="win-btn win-btn-minimize" aria-label="Minimize"></button>
+          <button class="win-btn win-btn-maximize" aria-label="Maximize"></button>
+          <button class="win-btn win-btn-close" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body scrollable-body" style="padding: 10px; display: flex; flex-direction: column; gap: 10px; font-family: 'MS Sans Serif', sans-serif; font-size: 11px;">
+        <div style="display: flex; gap: 10px; flex: 1;">
+          
+          <div style="flex: 1; border: 1px solid var(--win-shadow); padding: 6px; background-color: white;">
+            <div id="calendar-month-year" style="font-weight: bold; margin-bottom: 6px; text-align: center;">July 2026</div>
+            <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; font-weight: bold; border-bottom: 1px solid var(--win-shadow); padding-bottom: 4px; margin-bottom: 4px;">
+              <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+            </div>
+            <div id="calendar-days-grid" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center;">
+              
+            </div>
+          </div>
+          
+          <div style="width: 120px; border: 1px solid var(--win-shadow); padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: var(--win-gray); text-align: center;">
+            <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">Current Time:</div>
+            <div id="calendar-clock-display" style="font-size: 14px; font-weight: bold; font-family: monospace; border: 1px solid var(--win-shadow); background-color: white; padding: 4px; width: 100%;">00:00:00</div>
+            <div id="calendar-date-display" style="margin-top: 10px; font-size: 10px;">Sat, Jul 11, 2026</div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: flex-end; gap: 6px; margin-top: 10px;">
+          <button class="action-btn" id="calendar-ok-btn" style="padding: 2px 10px;">OK</button>
+          <button class="action-btn" id="calendar-cancel-btn" style="padding: 2px 10px;">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <!-- startmenu -->
+    <div class="start-menu outset-panel" id="start-menu" style="display: none;">
+      
+      <div class="start-menu-sidebar">
+        <div class="start-menu-sidebar-text">nielandvoid.com</div>
+        <div class="start-menu-sidebar-text"></div>
+      </div>
+      
+      <div class="start-menu-items">
+        <div class="start-menu-item" id="menu-programs">
+          <div class="start-menu-icon" style="background-image: url('assets/programs.png?v=2');"></div>
+          <span class="start-menu-text"><u>P</u>rograms</span>
+          <span class="start-menu-arrow">▶</span>
+          <!-- programs flyout -->
+          <div class="start-submenu outset-panel">
+            <div class="start-menu-item" data-target="window-computer">
+              <div class="start-menu-icon" style="background-image: url('assets/my-computer.png');"></div>
+              <span>My Computer</span>
+            </div>
+            <div class="start-menu-item" data-target="window-paint">
+              <div class="start-menu-icon" style="background-image: url('assets/paint.png?v=2');"></div>
+              <span>Paint</span>
+            </div>
+            <div class="start-menu-item" data-target="window-about">
+              <div class="start-menu-icon" style="background-image: url('assets/notepad.png?v=2');"></div>
+              <span>Notepad</span>
+            </div>
+          </div>
+        </div>
+        <div class="start-menu-item" id="menu-favorites">
+          <div class="start-menu-icon" style="background-image: url('assets/favorites.png?v=2');"></div>
+          <span class="start-menu-text"><u>F</u>avorites</span>
+          <span class="start-menu-arrow">▶</span>
+          <!-- favs flyout -->
+          <div class="start-submenu outset-panel">
+            <a href="https://github.com/nielandvoid" target="_blank" class="start-menu-item-link">
+              <div class="start-menu-item">
+                <div class="start-menu-icon" style="background-image: url('assets/sitemap.png?v=2');"></div>
+                <span>GitHub</span>
+              </div>
+            </a>
+            <a href="https://github.com/nielandvoid/oasis" target="_blank" class="start-menu-item-link">
+              <div class="start-menu-item">
+                <div class="start-menu-icon" style="background-image: url('assets/folder.png');"></div>
+                <span>oasis</span>
+              </div>
+            </a>
+            <a href="https://github.com/nielandvoid/peerprojectin" target="_blank" class="start-menu-item-link">
+              <div class="start-menu-item">
+                <div class="start-menu-icon" style="background-image: url('assets/folder.png');"></div>
+                <span>peerprojectin</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="start-menu-item" data-target="window-about">
+          <div class="start-menu-icon" style="background-image: url('assets/documents.png?v=2');"></div>
+          <span class="start-menu-text"><u>D</u>ocuments</span>
+        </div>
+        <div class="start-menu-item" data-target="window-calendar">
+          <div class="start-menu-icon" style="background-image: url('assets/date-time.png');"></div>
+          <span class="start-menu-text"><u>D</u>ate/Time Settings</span>
+        </div>
+        <div class="start-menu-divider"></div>
+        <div class="start-menu-item" id="menu-shutdown">
+          <div class="start-menu-icon" style="background-image: url('assets/power.png?v=2');"></div>
+          <span class="start-menu-text">Sh<u>u</u>t Down...</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- taskbar -->
+  <footer class="taskbar">
+    <button class="start-btn">
+      <div class="start-icon"></div>
+      Start
+    </button>
+    <div class="taskbar-divider"></div>
+    
+    
+    <div class="taskbar-tabs" id="taskbar-tabs-container">
+      
+    </div>
+    
+    <div class="taskbar-divider"></div>
+    <div class="systray">
+      <div class="systray-calendar-icon" id="systray-calendar"></div>
+      <div class="clock" id="systray-clock">00:00 PM</div>
+    </div>
+  </footer>
+
+  <div class="context-menu outset-panel" id="desktop-context-menu">
+    <div class="context-menu-item" id="context-refresh">Refresh</div>
+  </div>
+
+  <script src="app.js?v=35"></script>
+</body>
+</html>
+
+<!-- get a job ffs -->
