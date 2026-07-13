@@ -4,6 +4,7 @@ function playClickSound() {}
 // win drag & dorp
 let highestZ = 10;
 const windows = document.querySelectorAll('.window');
+const initialReadmeContent = document.querySelector('#window-about .notepad-textarea')?.value || '';
 
 function makeDraggable(win) {
   const titlebar = win.querySelector('.window-titlebar');
@@ -174,7 +175,7 @@ icons.forEach(icon => {
       if (targetId === 'window-about') {
         const textarea = win.querySelector('.notepad-textarea');
         if (textarea) {
-          textarea.value = `nielandvoid.\n---------------------------------------------\n---------------------------------------------`;
+          textarea.value = initialReadmeContent;
         }
         const titlebarText = win.querySelector('.titlebar-text');
         if (titlebarText) {
