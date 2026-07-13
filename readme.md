@@ -9,3 +9,5 @@ it's literally just vanilla html/css/js held together by pointer events and shee
 there's some more stuff on my mind, will get to that soon 
 
 thanks for passing by <3.
+
+edit: yet to update the icons used in paint for tools, would've taken too long to find the right assets so just used resembling emotes from virtual on-screen keyboard, forgot to update before inital commit < / 3
