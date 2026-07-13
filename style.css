@@ -7,7 +7,7 @@
   --win-shadow: #808080;
   --win-black: #0a0a0a;
   --win-bg-light: #dfdfdf;
-  --desktop-teal: #008080;
+  --desktop-teal: #000000;
   --active-blue-start: #000080;
   --active-blue-end: #1084d0;
   --inactive-gray-start: #808080;
@@ -25,6 +25,11 @@ body {
   font-size: 11px;
   color: var(--win-black);
   background-color: var(--desktop-teal);
+  /* legacy teal was cool but this is just cooler */
+  background-image: url('assets/wall.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   user-select: none;
   width: 100vw;
