@@ -1,3 +1,5 @@
+![wall](assets/wall.png)
+
 too desperate for initial commit + too exhausted for ts rn, will update soon
 
 basic overview tho:
